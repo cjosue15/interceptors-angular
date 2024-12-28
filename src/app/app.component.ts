@@ -1,12 +1,10 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { NgxSonnerToaster } from 'ngx-sonner';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  imports: [RouterOutlet, NgxSonnerToaster],
+  template: ` <router-outlet /> <ngx-sonner-toaster /> `,
 })
-export class AppComponent {
-  title = 'angular-interceptors-demo';
-}
+export class AppComponent {}
